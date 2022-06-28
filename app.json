@@ -64,7 +64,7 @@
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "postgres://mmutikuimbmvzq:66a5e0c4fb2b1141a5971a881e61099c25eca31c8489ba62eebed198826ff690@ec2-3-232-174-55.compute-1.amazonaws.com:5432/d9d74lvnb25b44"
+         "value": "mongodb+srv://BOT34:BOT34@cluster0.2dh9k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
