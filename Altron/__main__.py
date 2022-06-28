@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from FallenRobot import (
+from Altron import (
     ALLOW_EXCL,
     OWNER_USERNAME,
     CERT_PATH,
@@ -27,9 +27,9 @@ from FallenRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from FallenRobot.modules import ALL_MODULES
-from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
-from FallenRobot.modules.helper_funcs.misc import paginate_modules
+from Altron.modules import ALL_MODULES
+from Altron.modules.helper_funcs.chat_status import is_user_admin
+from Altron.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
