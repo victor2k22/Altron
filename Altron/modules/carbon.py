@@ -23,9 +23,7 @@ async def carbon_func(_, message):
 __mod_name__ = "Cᴀʀʙᴏɴ"
 
 __help__ = """
+/carbon <text> or reply
 
-ᴍᴀᴋᴇs ᴀ ᴄᴀʀʙᴏɴ ᴏғ ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜ.
-
-❍ /carbon *:* ᴍᴀᴋᴇs ᴄᴀʀʙᴏɴ ɪғ ʀᴇᴩʟɪᴇᴅ ᴛᴏ ᴀ ᴛᴇxᴛ
-
+Usage: Beautify your code using carbon.now.sh
  """

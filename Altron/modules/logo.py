@@ -285,22 +285,21 @@ async def lego(event):
         draw.text(
             (x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black"
         )
-        fname = "Altron.png"
+        fname = "altron.png"
         img.save(fname, "png")
         await telethn.send_file(
-            event.chat_id, file=fname, caption=f"ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ"
+            event.chat_id, file=fname, caption=f"ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴀʟᴛʀᴏɴ ✘ ʀᴏʙᴏᴛ"
         )
         await pesan.delete()
         if os.path.exists(fname):
             os.remove(fname)
     except Exception as e:
-        await event.reply(f"ғʟᴏᴏᴅᴡᴀɪᴛ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ @DevilsHeavenMF")
+        await event.reply(f"ғʟᴏᴏᴅᴡᴀɪᴛ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ @TheAltron")
 
 
 __mod_name__ = "Lᴏɢᴏ​"
 
 __help__ = """
-Altron Robot can create some beautiful and attractive logo for your profile pics.
-
-❍ /logo (Text) *:* Create a logo of your given text with random view.
+*User Commands:*
+/logo <text/name> - Create a logo with random view.
 """

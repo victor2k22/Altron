@@ -101,7 +101,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By [Altron](t.me/anonymous_was_bot)</b>
+Gathered By [ALTRON](t.me/TheAltronX)</b>
 """
 
     await borg.send_message(
@@ -114,7 +114,7 @@ Gathered By [Altron](t.me/anonymous_was_bot)</b>
 __help__ = """
 I will give information about a country
 
- ❍ /country <country name>*:* Gathering info about given country
+ /country <country name>*:* Gathering info about given country
 """
 
 __mod_name__ = "Cᴏᴜɴᴛʀʏ"

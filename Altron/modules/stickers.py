@@ -162,7 +162,7 @@ def kang(update: Update, context: CallbackContext):
                     emojis=sticker_emoji,
                 )
                 msg.reply_text(
-                    f"Sticker successfully added to [pack](t.me/addstickers/{packname})"
+                    f"*Your sticker has been added!* [pack](t.me/addstickers/{packname})"
                     + f"\nEmoji is: {sticker_emoji}",
                     parse_mode=ParseMode.MARKDOWN,
                 )
@@ -193,7 +193,7 @@ def kang(update: Update, context: CallbackContext):
                         emojis=sticker_emoji,
                     )
                     msg.reply_text(
-                        f"Sticker successfully added to [pack](t.me/addstickers/{packname})"
+                        f"*Your sticker has been added!* [pack](t.me/addstickers/{packname})"
                         + f"\nEmoji is: {sticker_emoji}",
                         parse_mode=ParseMode.MARKDOWN,
                     )
@@ -212,7 +212,7 @@ def kang(update: Update, context: CallbackContext):
                 print(e)
 
         else:
-            packname = "animated" + str(user.id) + "_by_" + context.bot.username
+            packname = str(user.id) + " | " + context.bot.username
             packname_found = 0
             max_stickers = 50
             while packname_found == 0:
@@ -221,11 +221,8 @@ def kang(update: Update, context: CallbackContext):
                     if len(stickerset.stickers) >= max_stickers:
                         packnum += 1
                         packname = (
-                            "animated"
-                            + str(packnum)
-                            + "_"
-                            + str(user.id)
-                            + "_by_"
+                            str(user.id)
+                            + " | "
                             + context.bot.username
                         )
                     else:
@@ -241,7 +238,7 @@ def kang(update: Update, context: CallbackContext):
                     emojis=sticker_emoji,
                 )
                 msg.reply_text(
-                    f"Sticker successfully added to [pack](t.me/addstickers/{packname})"
+                    f"*Your sticker has been added!* [pack](t.me/addstickers/{packname})"
                     + f"\nEmoji is: {sticker_emoji}",
                     parse_mode=ParseMode.MARKDOWN,
                 )
@@ -264,7 +261,7 @@ def kang(update: Update, context: CallbackContext):
                         "Sticker successfully added to [pack](t.me/addstickers/%s)"
                         % packname
                         + "\n"
-                        "Emoji is:" + " " + sticker_emoji,
+                        "Emoji is: " + sticker_emoji,
                         parse_mode=ParseMode.MARKDOWN,
                     )
                 print(e)
@@ -306,7 +303,7 @@ def kang(update: Update, context: CallbackContext):
                 emojis=sticker_emoji,
             )
             msg.reply_text(
-                f"Sticker successfully added to [pack](t.me/addstickers/{packname})"
+                f"*Your sticker has been added!* [pack](t.me/addstickers/{packname})"
                 + f"\nEmoji is: {sticker_emoji}",
                 parse_mode=ParseMode.MARKDOWN,
             )
@@ -433,7 +430,7 @@ def makepack_internal(
             )
         elif e.message == "Internal Server Error: created sticker set not found (500)":
             msg.reply_text(
-                "Sticker pack successfully created. Get it [here](t.me/addstickers/%s)"
+                "*Your sticker has been added!*\n Get it [here](t.me/addstickers/%s)"
                 % packname,
                 parse_mode=ParseMode.MARKDOWN,
             )
@@ -441,7 +438,7 @@ def makepack_internal(
 
     if success:
         msg.reply_text(
-            "Sticker pack successfully created. Get it [here](t.me/addstickers/%s)"
+            "*Your sticker has been added!*\n Get it [here](t.me/addstickers/%s)"
             % packname,
             parse_mode=ParseMode.MARKDOWN,
         )
@@ -450,10 +447,11 @@ def makepack_internal(
 
 
 __help__ = """
- ❍ /stickerid*:* reply to a sticker to me to tell you its file ID.
- ❍ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
- ❍ /kang*:* reply to a sticker to add it to your pack.
- ❍ /stickers*:* Find stickers for given term on combot sticker catalogue
+*User Commands:*
+/stickerid: reply to a sticker to me to tell you its file *ID*.
+/getsticker: reply to a sticker to me to upload its raw *PNG* file.
+/kang: reply to a sticker to add it to your pack.
+/stickers: Find stickers for given term on combot sticker catalogue
 """
 
 __mod_name__ = "Sᴛɪᴄᴋᴇʀ"
