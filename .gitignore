@@ -10,7 +10,7 @@ updates.txt
 # Session files
 Altron/*.session
 Altron/*.session-journal
-Altron.session-journal
+AltronX.session-journal
 *.session
 
 # Byte-compiled / optimized / DLL files
