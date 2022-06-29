@@ -8,9 +8,9 @@ from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
 
-PythonX = "Altron"
+Anonymous = "Altron"
 telegraph = Telegraph()
-r = telegraph.create_account(short_name=PythonX)
+r = telegraph.create_account(short_name=Anonymous)
 auth_url = r["auth_url"]
 
 
@@ -87,8 +87,9 @@ def resize_image(image):
 
 
 __help__ = """
-/tm :Get Telegraph Link Of Replied Media
-/txt :Get Telegraph Link of Replied Text
+I can upload files to Telegraph
+ ❍ /tm :Get Telegraph Link Of Replied Media
+ ❍ /tt :Get Telegraph Link of Replied Text
 """
 
 __mod_name__ = "T-Gʀᴀᴘʜ"

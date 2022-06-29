@@ -1,4 +1,4 @@
-# © @TheAltronX
+# © @AnonymousBoy1025
 import aiohttp
 from pyrogram import filters
 from Altron import pbot
@@ -10,7 +10,7 @@ __mod_name__ = "Gɪᴛʜᴜʙ"
 __help__ = """
 I will give information about github profile 
 
- /github <username>*:* Get information about a GitHub user.
+ ❍ /github <username>*:* Get information about a GitHub user.
 """
 
 

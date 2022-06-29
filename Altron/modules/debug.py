@@ -66,12 +66,6 @@ dispatcher.add_handler(LOG_HANDLER)
 DEBUG_HANDLER = CommandHandler("debug", debug)
 dispatcher.add_handler(DEBUG_HANDLER)
 
-__mod_name__ = "Dᴇʙᴜɢ"
-__help__ = """
-*DEV_USERS Only Commands:*
-/debug On | Off : For Debug Mode Enable or Disable
-/debug : For Stats of Current Debug Mode
-/logs : For Bot Logs
-"""
+__mod_name__ = "DEBUG"
 __command_list__ = ["debug"]
 __handlers__ = [DEBUG_HANDLER]

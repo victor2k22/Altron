@@ -21,7 +21,7 @@ from telegram.utils.helpers import mention_html, mention_markdown, escape_markdo
 def add_nsfw(update: Update, context: CallbackContext):
     chat = update.effective_chat
     msg = update.effective_message
-    user = update.effective_user  # Remodified by @HACKERX131
+    user = update.effective_user  # Remodified by @EverythingSuckz
     is_nsfw = sql.is_nsfw(chat.id)
     if not is_nsfw:
         sql.set_nsfw(chat.id)
@@ -50,7 +50,7 @@ def rem_nsfw(update: Update, context: CallbackContext):
         return ""
     else:
         sql.rem_nsfw(chat.id)
-        msg.reply_text("ʙᴀᴄᴋ ᴛᴏ ɴsғᴡ ᴍᴏᴅᴇ !")
+        msg.reply_text("ʙᴀᴄᴋ ᴛᴏ sғᴡ ᴍᴏᴅᴇ !")
         message = (
             f"<b>{html.escape(chat.title)}:</b>\n"
             f"ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇᴅ ɴsғᴡ\n"

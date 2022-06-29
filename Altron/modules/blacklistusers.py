@@ -1,3 +1,4 @@
+# Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
 import Altron.modules.sql.blacklistusers_sql as sql
 from Altron import (
@@ -156,15 +157,6 @@ def __user_info__(user_id):
     return text
 
 
-__mod_name__ = "B-ᴜsᴇʀs"
-
-__help__ = """
-*Blacklist Users*
-/ignore : Blacklist A User
-/ignorelist : List Of Blacklisted Users
-/notice : Unblacklist A User
-"""
-
 BL_HANDLER = CommandHandler("ignore", bl_user)
 UNBL_HANDLER = CommandHandler("notice", unbl_user)
 BLUSERS_HANDLER = CommandHandler("ignoredlist", bl_users)
@@ -173,4 +165,5 @@ dispatcher.add_handler(BL_HANDLER)
 dispatcher.add_handler(UNBL_HANDLER)
 dispatcher.add_handler(BLUSERS_HANDLER)
 
+__mod_name__ = "Blacklisting Users"
 __handlers__ = [BL_HANDLER, UNBL_HANDLER, BLUSERS_HANDLER]

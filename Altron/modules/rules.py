@@ -154,12 +154,11 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
-Every chat works with different rules; this module will help make those rules clearer!
-User commands:
-/rules: Check the current chat rules.
-Admin commands:
-/setrules *<text>*: Set the rules for this chat. Supports markdown, buttons, fillings, etc.
-/clearrules: Reset the chat rules to default.
+ ‣ `/rules`*:* get the rules for this chat.
+ ‣ `/rules here`*:* get the rules for this chat but send it in the chat.
+*Admins only:*
+ ‣ `/setrules <your rules here>`*:* set the rules for this chat.
+ ‣ `/clearrules`*:* clear the rules for this chat.
 """
 
 __mod_name__ = "Rᴜʟᴇs"

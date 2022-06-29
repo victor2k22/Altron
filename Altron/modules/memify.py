@@ -12,7 +12,7 @@ from Altron import LOGGER, TEMP_DOWNLOAD_DIRECTORY
 from Altron import telethn as bot
 
 
-Credit = "TheAltronX"
+Credit = "AnonymousBoy1025"
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -40,7 +40,7 @@ async def handler(event):
 
     msg = await event.reply("```Memifying this image! ✊🏻 ```")
 
-    if "TheAltronX" in Credit:
+    if "AnonymousBoy1025" in Credit:
         pass
 
     else:

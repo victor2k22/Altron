@@ -240,9 +240,10 @@ def temp_mute(update: Update, context: CallbackContext) -> str:
 
 
 __help__ = """
-/mute: Mute a user.
-/tmute: Temporarily mute a user. Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks.
-/unmute: Unmute a user.
+*Admins only:*
+ ❍ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
+ ❍ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+ ❍ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
 """
 
 MUTE_HANDLER = CommandHandler("mute", mute)

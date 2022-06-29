@@ -1,6 +1,5 @@
 from ast import Return
 import html
-import os
 
 from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.error import BadRequest
@@ -760,8 +759,8 @@ def invite(update: Update, context: CallbackContext):
 
 @connection_status
 def adminlist(update, context):
-    chat = update.effective_chat
-    user = update.effective_user
+    chat = update.effective_chat  # type: Optional[Chat] -> unused variable
+    user = update.effective_user  # type: Optional[User]
     args = context.args  # -> unused variable
     bot = context.bot
 

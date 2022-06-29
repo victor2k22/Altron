@@ -92,12 +92,5 @@ dispatcher.add_handler(LEAVE_HANDLER)
 dispatcher.add_handler(GITPULL_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
-__mod_name__ = "Dᴇᴠ"
-__help__ = """
-*DEV_USERS Only Commands:*
-/leave : DEV_USERS Only Command
-/gutpull : DEV_USERS Only Command
-/reboot : DEV_USERS Only Command
-/lockdown : DEV_USERS Only Command
-"""
+__mod_name__ = "Dev"
 __handlers__ = [LEAVE_HANDLER, GITPULL_HANDLER, RESTART_HANDLER, ALLOWGROUPS_HANDLER]
