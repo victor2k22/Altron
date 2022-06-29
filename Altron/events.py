@@ -12,7 +12,7 @@ from Altron import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Altron"]
+db = client["AltronX"]
 gbanned = db.gban
 
 
